@@ -1,3 +1,57 @@
 <resources>
     <string name="app_name">RecycleViews</string>
+    <string-array name="historic_event_name">
+        <item>Caida del imperio Romano</item>
+        <item> Primer ataque vikingo  </item>
+        <item>Coronacion de Carlomagno</item>
+        <item>Toma de Contantinopla</item>
+        <item>Invencion de la imprenta</item>
+        <item>Llegada de los castellanos a america</item>
+        <item>Inicio de la guerra de los 30 años</item>
+        <item>Fin de la dinastia Ming</item>
+        <item>Paz de Westfalia</item>
+        <item>Idependencia de las 13 colonias</item>
+        <item>Revolucion francesa</item>
+        <item>Congreso de viena</item>
+        <item>Comuna de paris</item>
+        <item> Revolucion Rusa</item>
+        <item>Atentado de la torres gemela</item>
+
+
+    </string-array>
+    <string-array name="historic_event_date">
+        <item>476</item>
+        <item>789</item>
+        <item>800</item>
+        <item>1453</item>
+        <item>1453</item>
+        <item>1492</item>
+        <item>1618</item>
+        <item>1644</item>
+        <item>1648</item>
+        <item>1776</item>
+        <item>1789</item>
+        <item>1814</item>
+        <item>1871</item>
+        <item>1917</item>
+        <item>2001</item>
+
+    </string-array>
+    <string-array name="historic_event_location">
+        <item>Italia</item>Caida del imperio Romano
+        <item>Gran bretaña</item>Primer ataque vikingo
+        <item>Aquisgran</item>Coronacion de Carlomagno
+        <item>Constantinopla</item>Toma de Contantinopla
+        <item>Sacro Imperio Romano Germanico</item>Invencion de la imprenta
+        <item>America</item>Llegada de los castellanos a america
+        <item>Europa</item>Inicio de la guerra de los 30 años
+        <item>China</item>Fin de la dinastia Ming
+        <item>Europa</item>Paz de Westfalia
+        <item>America</item>Idependencia de las 13 colonias
+        <item>Francia</item>Revolucion francesa
+        <item>Viena</item>Congreso de viena
+        <item>Paris</item>Comuna de paris
+        <item>Rusia</item> Revolucion Rusa
+        <item>New YOrk</item>Atentado de la torres gemela
+    </string-array>
 </resources>
