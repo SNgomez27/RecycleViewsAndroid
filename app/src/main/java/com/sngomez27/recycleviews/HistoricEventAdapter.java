@@ -1,6 +1,7 @@
 package com.sngomez27.recycleviews;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.util.ArrayList;
 
@@ -31,9 +34,43 @@ public class HistoricEventAdapter extends RecyclerView.Adapter<HistoricEventAdap
 
     @Override
     public void onBindViewHolder(@NonNull HistoricEventAdapter.MyViewHolder holder, int position) {
+
+    String eventName = historicEventModels.get(position).getEventName();
+    String eventDate = historicEventModels.get(position).getEventDate();
+    String eventLocation = historicEventModels.get(position).getEventLocation();
+
+
+
+
+
         holder.tvEventname.setText(historicEventModels.get(position).getEventName());
         holder.tvEventDate.setText(historicEventModels.get(position).getEventDate());
         holder.tvEventLocation.setText(historicEventModels.get(position).getEventLocation());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MaterialAlertDialogBuilder materialAlertDialogBuilder = new MaterialAlertDialogBuilder(context)
+                .setIcon(R.drawable.book_logo)
+                        .setTitle(eventName)
+                        .setMessage("estes evento sucedio en el año " + eventDate +".\n ¿Es correcto?")
+                        .setPositiveButton("Si", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+
+                            }
+                        })
+                        ;
+                materialAlertDialogBuilder.show();
+            }
+        });
+
     }
 
     @Override
